@@ -1,0 +1,18 @@
+# Python artifacts
+venv/
+__pycache__/
+*.pyc
+
+# ReFrame artifacts
+stage/
+output/
+*.log
+*.json
+*.out
+*.err
+
+# Database
+*.db
+
+# OS junk
+.DS_Store
