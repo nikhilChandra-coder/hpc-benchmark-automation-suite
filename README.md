@@ -22,18 +22,17 @@ The suite follows a standard HPC "Build-Run-Analyze" lifecycle:
 ## Quick Start
 
 ### 1. Install Dependencies
-```bash
 pip install reframe-hpc
 
 ### 2. Run the Benchmark
-Bash
 reframe -c matrix_test.py -r --report-file report.json
+
 ### 3. Ingest Data
-Bash
 python3 aggregator.py report.json
+
 ### 4. Query Results
-Bash
 sqlite3 hpc_metrics.db "SELECT * FROM benchmark_runs;"
+
 Sample Output
-Plaintext
+
 [SUCCESS] Ingesting: MatrixBenchmark -> GFlops = 0.37 GFlops
